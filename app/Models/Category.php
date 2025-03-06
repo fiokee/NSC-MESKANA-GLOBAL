@@ -10,8 +10,8 @@ class Category extends Model
 {
     use HasFactory;
 
+    public $timestamps = true;
     protected $fillable = ['title', 'slug'];
-
     public function products():BelongsToMany{
         return $this->belongsToMany(Product::class);
     }
