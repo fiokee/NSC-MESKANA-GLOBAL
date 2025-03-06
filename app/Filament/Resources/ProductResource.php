@@ -36,6 +36,9 @@ class ProductResource extends Resource
                     ->required(),
                 Forms\Components\DateTimePicker::make('published_at')
                     ->required(),
+                    Forms\Components\Select::make('user_id')
+                    ->relationship('user', 'name')
+                    ->required(),
             ]);
     }
 
@@ -54,6 +57,8 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('user.name')
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -69,6 +74,7 @@ class ProductResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
