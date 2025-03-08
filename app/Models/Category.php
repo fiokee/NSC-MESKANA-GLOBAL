@@ -13,6 +13,6 @@ class Category extends Model
     public $timestamps = true;
     protected $fillable = ['title', 'slug'];
     public function products():BelongsToMany{
-        return $this->belongsToMany(Product::class);
+        return $this->belongsToMany(Product::class, 'category_products');
     }
 }
