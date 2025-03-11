@@ -12,10 +12,12 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::query()->where('active', '#', 1)
-        ->where('published_at', 'on', 'null')
+        $products = Product::query()
+        ->where('active', 1)->get() ?? collect()
+        // ->whereDate('published_at', 'on', 'null')
         ->orderBy('published_at', 'desc')
         ->paginate();
+        // dd($products);
         return view('home', compact('products'));
     }
 
