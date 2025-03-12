@@ -1,9 +1,6 @@
 <!--Slider product Star-->
 <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Featured Products</span></h2>
 <div class="col">
-    {{-- @foreach ($product->categories as $category )
-        
-    @endforeach --}}
     <div class="owl-carousel related-carousel">
         @if(isset($products) && count($products) > 0)
         @foreach ($products as $product )
@@ -28,7 +25,9 @@
                 </div>
                 <!-- View Details Button -->
                 <div class="mt-3">
-                    <a href="solar_shop.html" class="btn btn-primary">Shop Now</a>
+                    @foreach ($product->categories as $category)
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    @endforeach
                 </div>
             </div>
             </div>

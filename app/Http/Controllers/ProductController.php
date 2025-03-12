@@ -19,8 +19,8 @@ class ProductController extends Controller
         ->paginate(10);
 
     // Count products per category
-    $categories = Category::withCount('products')->get();
-        return view('home', compact('products', 'categories'));
+    // $categories = Category::withCount('products')->get();
+        return view('home', compact('products'));
     }
 
     /**
