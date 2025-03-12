@@ -111,7 +111,10 @@
                         <img class="img-fluid" src="img/furnitures (2).jpeg" alt="">
                     </div>
                     <div class="flex-fill pl-3">
-                        <h6>Furnitures</h6>
+                        @foreach ($categories as $category )
+                            
+                        @endforeach
+                        <h6>{{$category->title}} has {{$category->products_counts}}</h6>
                         <small class="text-body">100 Products</small>
                     </div>
                 </div>

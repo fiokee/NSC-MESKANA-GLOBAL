@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -14,11 +15,12 @@ class ProductController extends Controller
     {
         $products = Product::query()
         ->where('active', 1)->get() ?? collect()
-        // ->whereDate('published_at', 'on', 'null')
         ->orderBy('published_at', 'desc')
-        ->paginate();
-        // dd($products);
-        return view('home', compact('products'));
+        ->paginate(10);
+
+    // Count products per category
+    $categories = Category::withCount('products')->get();
+        return view('home', compact('products', 'categories'));
     }
 
     /**
