@@ -26,7 +26,8 @@
                 <!-- View Details Button -->
                 <div class="mt-3">
                     @foreach ($product->categories as $category)
-                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        {{-- <a href="{{ route('shop.category', $category->id) }}" class="btn btn-primary">Shop Now</a> --}}
+                        <a href="shop.category" class="btn btn-primary">Shop Now</a>
                     @endforeach
                 </div>
             </div>
