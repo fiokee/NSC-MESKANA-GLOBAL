@@ -28,7 +28,6 @@ class HeaderBar extends Component
             ->select('categories.id', 'categories.title', 'categories.slug', DB::raw('count(*) as total'))
             ->groupBy('categories.id', 'categories.title', 'categories.slug')
             ->orderByDesc('total')
-            ->limit(10)
             ->get();
         return view('components.header-bar', compact('categories'));
     }

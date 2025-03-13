@@ -97,7 +97,7 @@
         </div>
         <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
             <div class="col-lg-4">
-                <a href="index.html" class="text-decoration-none">
+                <a href="{{route('home')}}" class="text-decoration-none">
                     <span class="h1 text-uppercase text-primary bg-dark px-2">MESKANA</span>
                     <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">GLOBAL</span>
                 </a>
@@ -143,7 +143,7 @@
                         </div>
                         @foreach ($categories as $category )
                             
-                        <a href="" class="nav-item nav-link">{{$category->title}}</a>
+                        <a href="{{route('by-category', $category)}}" class="nav-item nav-link">{{$category->title}}</a>
                         @endforeach
                         
                     </div>
@@ -213,7 +213,7 @@
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-secondary mb-2" href="{{route('home')}}"><i class="fa fa-angle-right mr-2"></i>Home</a>
                             @foreach ($categories as $category )
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>{{$category->title}}</a>
+                            <a class="text-secondary mb-2" href="{{route('by-category', $category)}}"><i class="fa fa-angle-right mr-2"></i>{{$category->title}}</a>
                             @endforeach
                             <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a> -->
                             <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a> -->

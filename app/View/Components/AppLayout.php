@@ -30,7 +30,7 @@ class AppLayout extends Component
             ->orderByDesc('total')
             ->limit(4)
             ->get();
-        
+        // dd($query);
         return view('layouts.app', compact('categories'));
     }
 }
