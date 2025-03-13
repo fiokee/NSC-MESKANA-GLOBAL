@@ -23,6 +23,16 @@ class ProductController extends Controller
         return view('home', compact('products'));
     }
 
+    public function byCategory(Category $category){
+        $products = Product::query()
+        ->join('category_products', 'products.id', '=', 'category_products.category_id')
+        ->where('category_products.category_id', '=', $category->id)
+        ->where('active', '=', true)
+        ->orderBy('published_at', 'desc')
+        ->paginate(10);
+
+        return view('components.shop', compact('products'));
+    }
     /**
      * Show the form for creating a new resource.
      */

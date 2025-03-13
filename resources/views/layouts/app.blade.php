@@ -23,7 +23,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -162,7 +162,7 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{route('home')}}" class="nav-item nav-link active">Home</a>
                             @foreach ($categories as $category )
-                            <a href="lighting_shop.html" class="nav-item nav-link">{{$category->title}}</a>
+                            <a href="{{route('by-category', $category)}}" class="nav-item nav-link">{{$category->title}}</a>
                             @endforeach
                             
                             <!-- <a href="detail.html" class="nav-item nav-link">Shop Detail</a> -->
@@ -282,10 +282,10 @@
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="{{asset('mail/contact.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 </body>
 
 </html>
