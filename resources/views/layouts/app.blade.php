@@ -141,9 +141,10 @@
                                 <a href="" class="dropdown-item">Baby's Dresses</a>
                             </div> -->
                         </div>
-                        <a href="" class="nav-item nav-link">Lighting</a>
-                        <a href="" class="nav-item nav-link">Furnitures</a>
-                        <a href="" class="nav-item nav-link">Solar</a>
+                        @foreach ($categories as $category )
+                            
+                        <a href="" class="nav-item nav-link">{{$category->title}}</a>
+                        @endforeach
                         
                     </div>
                 </nav>
@@ -159,10 +160,11 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="lighting_shop.html" class="nav-item nav-link">Lightings</a>
-                            <a href="furniture_shop.html" class="nav-item nav-link">Furnitures</a>
-                            <a href="solar_shop.html" class="nav-item nav-link">Solar-Equipment</a>
+                            <a href="{{route('home')}}" class="nav-item nav-link active">Home</a>
+                            @foreach ($categories as $category )
+                            <a href="lighting_shop.html" class="nav-item nav-link">{{$category->title}}</a>
+                            @endforeach
+                            
                             <!-- <a href="detail.html" class="nav-item nav-link">Shop Detail</a> -->
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
@@ -209,8 +211,10 @@
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="{{route('home')}}"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            @foreach ($categories as $category )
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>{{$category->title}}</a>
+                            @endforeach
                             <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a> -->
                             <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a> -->
                             <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a> -->

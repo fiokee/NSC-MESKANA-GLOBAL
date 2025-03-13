@@ -100,9 +100,9 @@
 <!-- Featured End -->
 
 
-<!-- Categories Start -->
+<!-- Small Categories Start -->
 <x-header-bar></x-header-bar>
-<!-- Categories End -->
+<!--Small Categories End -->
 
 <!--Slider product Star-->
 
