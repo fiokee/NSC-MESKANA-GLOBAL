@@ -178,7 +178,9 @@
                                 </div>
                                 
                                 <div class="mt-3">
-                                    <a href="{{route('product.detail',['product' => $product->slug])}}" class="btn btn-primary">View Details</a>
+                                    <a
+                                     href="{{route('product.detail',['product' => $product->slug])}}" 
+                                     class="btn btn-primary">View Details</a>
                                 </div>
                             </div>
                         </div>
