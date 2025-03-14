@@ -24,6 +24,7 @@ class HeaderBar extends Component
     public function render(): View|Closure|string
     {
         $categories = Category::query()
+        // ->where('active', '=', true)
             ->join('category_products', 'categories.id', '=', 'category_products.category_id')
             ->select('categories.id', 'categories.title', 'categories.slug', DB::raw('count(*) as total'))
             ->groupBy('categories.id', 'categories.title', 'categories.slug')
