@@ -33,6 +33,7 @@ class ProductController extends Controller
 
         return view('components.shop', compact('products', 'category'));
     }
+    
     /**
      * Show the form for creating a new resource.
      */
@@ -52,10 +53,10 @@ class ProductController extends Controller
     // /**
     //  * Display the specified resource.
     //  */
-    // public function show(Product $product)
-    // {
-    //     //
-    // }
+    public function show(Product $product)
+    {
+        return view('components.product-detail', compact('product'));
+    }
 
     // /**
     //  * Show the form for editing the specified resource.
