@@ -18,6 +18,13 @@ class ProductController extends Controller
         ->orderBy('published_at', 'desc')
         ->paginate(10);
 
+        // Ensure thumbnail is a decoded array
+    foreach ($products as $product) {
+        if (is_string($product->thumbnail)) {
+            $product->thumbnail = json_decode($product->thumbnail, true);
+        }
+    }
+
     // Count products per category
     // $categories = Category::withCount('products')->get();
         return view('home', compact('products'));
@@ -30,6 +37,13 @@ class ProductController extends Controller
         ->where('active', '=', true)
         ->orderBy('published_at', 'desc')
         ->paginate(10);
+
+        // Ensure thumbnail is a decoded array
+    foreach ($products as $product) {
+        if (is_string($product->thumbnail)) {
+            $product->thumbnail = json_decode($product->thumbnail, true);
+        }
+    }
 
         return view('components.shop', compact('products', 'category'));
     }

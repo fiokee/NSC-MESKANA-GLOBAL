@@ -6,7 +6,7 @@
             <nav class="breadcrumb bg-light mb-30">
                 <a class="breadcrumb-item text-dark" href="#">Home</a>
                 <a class="breadcrumb-item text-dark" href="#">Shop</a>
-                <span class="breadcrumb-item active">Shop Detail</span>
+                <span class="breadcrumb-item active">Product Detail</span>
             </nav>
         </div>
     </div>
@@ -22,18 +22,17 @@
         <div class="col-lg-5 mb-30">
             <div id="product-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner bg-light">
-                    <div class="carousel-item active">
-                        <img class="w-100 h-100" src="/storage/{{$product->thumbnail}}" alt="Image">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100 h-100" src="img/furnitures (2).jpeg" alt="Image">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100 h-100" src="img/product-3.jpg" alt="Image">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100 h-100" src="img/solar-equipment (17).jpeg" alt="Image">
-                    </div>
+                    @php
+                        $thumbnails = is_array($product->thumbnail) ? $product->thumbnail : [$product->thumbnail];
+                    @endphp
+                    
+                    @foreach ($thumbnails as $key => $image)
+                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                            <div class="product-image-container">
+                                <img src="{{ asset('storage/' . $image) }}" alt="{{$product->title}}">
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
                 <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
                     <i class="fa fa-2x fa-angle-left text-dark"></i>

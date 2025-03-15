@@ -5884,6 +5884,21 @@ a.close.disabled {
   display: block;
 }
 
+.product-image-container {
+  width: 100%;
+  height: 400px; /* Set your desired fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This will maintain aspect ratio */
+}
+
 .carousel-item-next:not(.carousel-item-left),
 .active.carousel-item-right {
   transform: translateX(100%);

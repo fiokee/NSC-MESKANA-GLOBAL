@@ -5,8 +5,8 @@
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="#">Home</a>
-                    <a class="breadcrumb-item text-dark" href="#">Furniture Shop</a>
-                    <span class="breadcrumb-item active">Shop List</span>
+                    <a class="breadcrumb-item text-dark" href="#">{{$category->title}} Shop</a>
+                    <span class="breadcrumb-item active">{{$category->title}} List</span>
                 </nav>
             </div>
         </div>
@@ -148,7 +148,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="/storage/{{$product->thumbnail}}" alt="Product Image">
+                                @php
+                                 $thumbnails = is_array($product->thumbnail) ? $product->thumbnail : [$product->thumbnail];
+                                 @endphp
+                                @if (!empty($product->thumbnail) && is_array($product->thumbnail))
+                                <img class="img-fluid w-100" src=" {{ asset('storage/' . $product->thumbnail[0]) }}" alt="{{$product->title}}">
+                                @endif
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="#">
                                         <i class="far fa-heart"></i>

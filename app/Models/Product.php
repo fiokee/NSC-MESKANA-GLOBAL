@@ -21,7 +21,11 @@ class Product extends Model
         'active',
         'published_at',
         'category_id',
-        'user_id'
+        'user_id',
+    ];
+
+    protected $casts = [
+        'thumbnail' => 'array', // Convert JSON to an array automatically
     ];
 
     public function user():BelongsTo{

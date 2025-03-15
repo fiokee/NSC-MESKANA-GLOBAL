@@ -34,6 +34,9 @@ class ProductResource extends Resource
                                     ->required(),
                                 Forms\Components\FileUpload::make('thumbnail')
                                     ->image()
+                                    ->multiple() // Allow multiple image uploads
+                                    ->maxFiles(3)
+                                    ->nullable()
                                     ->disk('public')
                                     ->directory('products')
                                     ->preserveFilenames() // Try preserving original filenames
@@ -63,7 +66,12 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('thumbnail')
+                    ->label('Images')
+                    ->circular()
+                    ->stacked()
+                    ->limit(2) // Show up to 3 images in the table
                     ->searchable(),
+                   
                 Tables\Columns\IconColumn::make('active')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('published_at')

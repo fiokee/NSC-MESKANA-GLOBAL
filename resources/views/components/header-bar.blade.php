@@ -11,8 +11,8 @@
                     <div class="overflow-hidden" style="width: 100px; height: 100px;">
                         @php
                             $images = [
-                                'img/furnitures (2).jpeg',
                                 'img/lighting (4).jpeg',
+                                'img/furnitures (2).jpeg',
                                 'img/solar-equipment (17).jpeg'
                             ];
                             $image = $images[$index % count($images)]; // Assigns images in a loop
