@@ -24,9 +24,9 @@
                     </div>
 
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#">
+                        <h2 class="h6 text-decoration-none text-truncate" href="#">
                             {{ $product->title }}
-                        </a>
+                        </h2>
 
                         <div class="d-flex align-items-center justify-content-center mb-1">
                             @php

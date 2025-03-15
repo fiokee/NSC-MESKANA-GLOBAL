@@ -162,17 +162,21 @@
                             </div>
                             
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="#">{{ $product->title }}</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h6 class="text-muted ml-2">
-                                        {{strip_tags($product->body)}}
-                                    </h6>
+                                <h2 class="h6 text-decoration-none text-truncate" href="#">{{ $product->title }}</h2>
+                                <div class="d-flex align-items-center mt-2">
+                                    <p class="text-muted ml-2">
+                                        {{$product->shortBody()}}
+                                        {{-- {{strip_tags($product->body)}} --}}
+                                    </p>
                                 </div>
                                 
-                                <a class="btn" href="https://wa.me/2348123456789" target="_blank">
-                                    <h5 class="btn btn-primary">Order via WhatsApp</h5>
-                                    <i class="fab fa-whatsapp" style="font-size: 40px; color: #25D366;"></i>
-                                </a>
+                                <a class="btn" 
+                                    href="https://api.whatsapp.com/send?phone=2348146901808&text={{ urlencode('Hello, I want to order ' . $product->title . ' from ' . url()->current() . ' Image: ' . asset($product->thumbnail[0])) }}" 
+                                    target="_blank">
+                                        <h5 class="btn btn-primary">Order via WhatsApp</h5>
+                                        <i class="fab fa-whatsapp" style="font-size: 40px; color: #25D366;"></i>
+                                    </a>
+
                                 
                                 <div class="d-flex align-items-center justify-content-center mb-1">
                                     <small class="fa fa-star text-primary mr-1"></small>

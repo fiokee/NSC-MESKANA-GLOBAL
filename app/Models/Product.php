@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+
 
 class Product extends Model
 {
@@ -35,4 +37,9 @@ class Product extends Model
     public function categories():BelongsToMany{
         return $this->belongsToMany(Category::class, 'category_products');
     }
+
+    public function shortBody(): string{
+        return Str::words(strip_tags($this->body), words: 15);
+    }
 }
+
