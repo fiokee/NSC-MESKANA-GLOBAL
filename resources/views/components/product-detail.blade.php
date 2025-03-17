@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout :meta-title="$product->meta_title ?: $product->title">
 <!-- Breadcrumb Start -->
 <div class="container-fluid">
     <div class="row px-xl-5">

@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NSC MESKANA GLOBAL CO LTD </title>
+    <title>{{ $metaTitle ?: 'NSC MESKANA GLOBAL CO LTD'}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="meskana store" name="keywords">
     <meta content="meskana store" name="description">
+    <meta name="description" content="{{$metaDescription}}"
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -116,7 +117,7 @@
             </div>
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Customer Service</p>
-                <h5 class="m-0">0814 690 1808</h5>
+                <h5 class="m-0">0814 690 1808, 0813 369 8934</h5>
             </div>
         </div>
     </div>
@@ -204,7 +205,7 @@
                 <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Alaba International Market, Lagos</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>nscmeskanaglobalcoltd@gmail.com</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0814 690 1808</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0814 690 1808, 0813 369 8934</p>
             </div>
             <div class="col-lg-8 col-md-12">
                 <div class="row">

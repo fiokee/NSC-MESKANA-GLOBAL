@@ -1,6 +1,6 @@
  
  <!-- Carousel Start -->
- <x-app-layout>
+ <x-app-layout meta-description="NSC MESKANA GLOBAL CO LTD WEBSITE for lighting solar-equipment and furnitures">
  <div class="container-fluid mb-3">
     <div class="row px-xl-5">
         <div class="col-lg-8">

@@ -32,6 +32,8 @@ class ProductResource extends Resource
                                     ->required(),
                                 Forms\Components\TextInput::make('slug')
                                     ->required(),
+                                Forms\Components\TextInput::make('meta_title'),
+                                Forms\Components\TextInput::make('meta_description'),
                                 Forms\Components\FileUpload::make('thumbnail')
                                     ->image()
                                     ->multiple() // Allow multiple image uploads

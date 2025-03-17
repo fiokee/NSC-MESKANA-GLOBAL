@@ -24,6 +24,8 @@ class Product extends Model
         'published_at',
         'category_id',
         'user_id',
+        'meta_title',
+        'meta_description'
     ];
 
     protected $casts = [
