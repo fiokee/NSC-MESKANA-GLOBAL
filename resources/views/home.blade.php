@@ -16,7 +16,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Furnitures</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Upgrade your home with stunning, high-quality furniture that blends style and comfort effortlessly. Whether you love modern elegance or classic charm, we have the perfect pieces for you. Order now on</p>
                                 
                                 <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                             </div>
@@ -27,7 +27,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Lighting</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Discover premium lighting solutions that enhance every corner of your space. From warm ambiance to modern brilliance, our collection adds style and function to your home. Order now and brighten your world</p>
                                 <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Solar Equipment</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Switch to reliable and sustainable solar solutions for a brighter future. Enjoy uninterrupted power while saving on energy costs. Contact us today and make the switch to solar!</p>
                                 <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                             </div>
                         </div>

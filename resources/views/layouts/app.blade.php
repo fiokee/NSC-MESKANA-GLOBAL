@@ -42,20 +42,18 @@
             <div class="col-lg-6 text-center text-lg-right">
                 
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.facebook.com/share/1A7GWXtyRX/" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-dark px-2" href="">
-                            <i class="fab fa-twitter"></i>
+                        
+                        <a class="text-dark px-2" href="https://www.facebook.com/share/1Dq9aM2QT3/" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="text-dark px-2" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.instagram.com/nsc.lightings.store?igsh=MXUweWttOGRvdWYwNw%3D%3D" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-dark pl-2" href="">
-                            <i class="fab fa-youtube"></i>
+                        <a class="text-dark pl-2" href="https://www.instagram.com/meskana_global_energy?igsh=MWt2cmQxZzl2c2RwNQ==" target="_blank">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 
@@ -104,7 +102,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-left">
-                <form action="">
+                {{-- <form action="">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for products">
                         <div class="input-group-append">
@@ -113,7 +111,7 @@
                             </span>
                         </div>
                     </div>
-                </form>
+                </form> --}}
             </div>
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Customer Service</p>
@@ -202,7 +200,7 @@
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
+                <p class="mb-4">Have questions about our products or need help placing an order? Chat with us on WhatsApp for instant support. We’re here to assist you with product recommendations, pricing, and order processing!</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Alaba International Market, Lagos</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>nscmeskanaglobalcoltd@gmail.com</p>
                 <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0814 690 1808, 0813 369 8934</p>
@@ -235,21 +233,21 @@
                     </div> -->
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
-                        <form action="">
+                        <p>Coming Soon!</p>
+                        {{-- <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Your Email Address">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary">Sign Up</button>
                                 </div>
                             </div>
-                        </form>
+                        </form> --}}
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
                         <div class="d-flex">
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.instagram.com/nsc.lightings.store?igsh=MXUweWttOGRvdWYwNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/share/1A7GWXtyRX/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square" href="https://www.instagram.com/meskana_global_energy?igsh=MWt2cmQxZzl2c2RwNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/share/1Dq9aM2QT3/" target="_blank"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>

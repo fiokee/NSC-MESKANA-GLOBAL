@@ -47,30 +47,61 @@ class ProductController extends Controller
 
         return view('components.shop', compact('products', 'category'));
     }
+
+    public function search(Request $request)
+{
+    $query = $request->input('query');
+
+    // Search in product title and description
+    $products = Product::query()
+            ->where('active', 1)
+            ->where(function($q) use ($query) {
+                $q->where('title', 'LIKE', "%$query%")
+                    ->orWhere('body', 'LIKE', "%$query%");
+            })
+            ->orderBy('published_at', 'desc')
+            ->paginate(10);
     
-    /**
-     * Show the form for creating a new resource.
-     */
-    // public function create()
-    // {
-    //     //
-    // }
+    // Ensure thumbnail is a decoded array
+    foreach ($products as $product) {
+        if (is_string($product->thumbnail)) {
+            $product->thumbnail = json_decode($product->thumbnail, true);
+        }
+    }
 
-    // /**
-    //  * Store a newly created resource in storage.
-    //  */
-    // public function store(Request $request)
-    // {
-    //     //
-    // }
-
-    // /**
-    //  * Display the specified resource.
-    //  */
+    // If AJAX request, append query to pagination links
+    if ($request->ajax()) {
+        $products->appends(['query' => $query]);
+    }
+                    
+    return view('components.shop', compact('products', 'query'));
+}
+    
     public function show(Product $product)
     {
         return view('components.product-detail', compact('product'));
+
     }
+        /**
+         * Show the form for creating a new resource.
+         */
+        // public function create()
+        // {
+        //     //
+        // }
+    
+        // /**
+        //  * Store a newly created resource in storage.
+        //  */
+        // public function store(Request $request)
+        // {
+        //     //
+        // }
+    
+        // /**
+        //  * Display the specified resource.
+        //  */
+   
 
     // /**
     //  * Show the form for editing the specified resource.
