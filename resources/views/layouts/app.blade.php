@@ -10,8 +10,7 @@
     <meta name="description" content="{{$metaDescription}}"
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/meskana_logo.jpeg') }}">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
@@ -45,15 +44,24 @@
                         <a class="text-dark px-2" href="https://www.facebook.com/share/1A7GWXtyRX/" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
+                        <a class="text-dark px-2" href="https://www.instagram.com/nsc.lightings.store?igsh=MXUweWttOGRvdWYwNw%3D%3D" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                         
                         <a class="text-dark px-2" href="https://www.facebook.com/share/1Dq9aM2QT3/" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="text-dark px-2" href="https://www.instagram.com/nsc.lightings.store?igsh=MXUweWttOGRvdWYwNw%3D%3D" target="_blank">
+
+                        <a class="text-dark px-2" href="https://www.instagram.com/my_furniture.store?igsh=bjU0M3Axd3pyZ3B4" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
+                        
                         <a class="text-dark pl-2" href="https://www.instagram.com/meskana_global_energy?igsh=MWt2cmQxZzl2c2RwNQ==" target="_blank">
                             <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a class="text-dark px-2" href="https://www.facebook.com/share/14xbSf2REu/" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 
@@ -248,6 +256,9 @@
                             <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/share/1A7GWXtyRX/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-primary btn-square" href="https://www.instagram.com/meskana_global_energy?igsh=MWt2cmQxZzl2c2RwNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/share/1Dq9aM2QT3/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="btn btn-primary btn-square" href="https://www.instagram.com/my_furniture.store?igsh=bjU0M3Axd3pyZ3B4" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/share/14xbSf2REu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
                         </div>
                     </div>
                 </div>
