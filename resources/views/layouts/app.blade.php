@@ -278,7 +278,12 @@
         </div>
     </div>
     <!-- Footer End -->
-
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-float-message">How can we help you?</div>
+        <a href="https://api.whatsapp.com/send?phone=2348133698934" class="whatsapp-float-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>

@@ -66,6 +66,13 @@
                                      @endphp
                                     @if (!empty($product->thumbnail) && is_array($product->thumbnail))
                                     <img class="img-fluid w-100" src=" {{ asset('storage/' . $product->thumbnail[0]) }}" alt="{{$product->title}}">
+
+                                    {{-- <p>Image in production if does not display us this code below</p> --}}
+                                    {{-- {{env('APP_ENV') == "production" ? url('add the same floder name you use inside index.php here/storage/app/public/'.$productimage) : asset('storage/'.$productimage)}} --}}
+
+
+                                    {{-- meskana-ecomms/storage/app/public/'.$productimage) : asset('storage/'.$productimage)}} --}}
+
                                     @endif
                                     <div class="product-action">
                                         <a class="btn btn-outline-dark btn-square" href="#">

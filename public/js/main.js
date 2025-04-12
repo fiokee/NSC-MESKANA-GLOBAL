@@ -33,6 +33,25 @@
     });
 
 
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const whatsappFloat = document.getElementById('whatsappFloat');
+    //     let scrollThreshold = 300; // Show after scrolling 300px
+        
+    //     window.addEventListener('scroll', function() {
+    //       if (window.scrollY > scrollThreshold) {
+    //         whatsappFloat.classList.add('active');
+    //       } else {
+    //         whatsappFloat.classList.remove('active');
+    //       }
+    //     });
+        
+    //     // Check scroll position on page load
+    //     if (window.scrollY > scrollThreshold) {
+    //       whatsappFloat.classList.add('active');
+    //     }
+    //   });
+
+
     // Vendor carousel
     $('.vendor-carousel').owlCarousel({
         loop: true,

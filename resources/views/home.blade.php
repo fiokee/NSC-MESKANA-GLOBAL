@@ -100,15 +100,15 @@
 <!-- Featured End -->
 
 
-<!-- Small Categories Start -->
-<x-header-bar></x-header-bar>
-<!--Small Categories End -->
-
 <!--Slider product Star-->
 
    <x-product-item :products="$products"></x-product-item> 
 
 <!--Slider product end-->
+<!-- Small Categories Start -->
+{{-- <x-header-bar></x-header-bar> --}}
+<!--Small Categories End -->
+
 
 
 
@@ -511,15 +511,15 @@
         <div class="col">
             <div class="owl-carousel vendor-carousel">
                 <div class="bg-light p-4">
-                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/client.jpg" alt="">
                 </div>
                 <div class="bg-light p-4">
-                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/client2.jpg" alt="">
                 </div>
-                <div class="bg-light p-4">
+                {{-- <div class="bg-light p-4">
                     <img src="img/vendor-3.jpg" alt="">
-                </div>
-                <div class="bg-light p-4">
+                </div> --}}
+                {{-- <div class="bg-light p-4">
                     <img src="img/vendor-4.jpg" alt="">
                 </div>
                 <div class="bg-light p-4">
@@ -527,7 +527,7 @@
                 </div>
                 <div class="bg-light p-4">
                     <img src="img/vendor-6.jpg" alt="">
-                </div>
+                </div> --}}
                 <div class="bg-light p-4">
                     <img src="img/vendor-7.jpg" alt="">
                 </div>

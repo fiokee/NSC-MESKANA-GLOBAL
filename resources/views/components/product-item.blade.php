@@ -40,7 +40,7 @@
                         <!-- View Details Button -->
                         <div class="mt-3">
                             @foreach ($product->categories as $category)
-                                <a href="{{ route('by-category', $category->id) }}" class="btn btn-primary">
+                                <a href="{{ route('by-category', $category->slug) }}" class="btn btn-primary">
                                     Shop Now
                                 </a>
                             @endforeach
