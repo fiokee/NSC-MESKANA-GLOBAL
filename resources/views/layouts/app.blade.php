@@ -180,6 +180,7 @@
                                     <a href="checkout.html" class="dropdown-item">Checkout</a>
                                 </div>
                             </div> -->
+                            <a href="{{route('blog-section')}}" class="nav-item nav-link">Blog</a>
                             <a href="{{route('contact-us')}}" class="nav-item nav-link">Contact</a>
                         </div>
                         <!-- <div class="navbar-nav ml-auto py-0 d-none d-lg-block">

@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SiteController;
+use App\View\Components\BlogSection;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProductController::class, 'index'])->name('home');
+Route::get('/blog-section', [BlogSection::class, 'render'])->name('blog-section');
 Route::get('/contact-us/', [SiteController::class, 'contact'])->name('contact-us');
 Route::get('/category/{category:slug}', [ProductController::class, 'byCategory'])->name('by-category');
 
