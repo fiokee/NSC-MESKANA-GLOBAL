@@ -3,18 +3,18 @@
 
   <div class="blog-grid">
     <!-- Blog Card 1 -->
-    <div class="blog-card" onclick="location.href='blog-detail.html';">
+    <div class="blog-card" onclick="location.href='{{route('blog-detail')}}';">
       <img class="blog-img" src="img/furnitures (3).jpeg" loading="lazy" alt=""></img>
       <div class="overlay"></div>
       <div class="content">
-        <div class="tag">Travel</div>
-        <h1 class="title">Travel is coming new</h1>
+        <div class="tag">Furniture</div>
+        <h1 class="title">Furniture chair</h1>
         <div class="date">18 Sep. 2017</div>
       </div>
     </div>
 
     <!-- Blog Card 2 -->
-    <div class="blog-card" onclick="location.href='blog-detail.html';">
+    <div class="blog-card" onclick="location.href='{{route('blog-detail')}}';">
       <img class="blog-img"src="img/lighting (5).jpeg" loading="lazy" alt=""></img>
       <div class="overlay"></div>
       <div class="content">
