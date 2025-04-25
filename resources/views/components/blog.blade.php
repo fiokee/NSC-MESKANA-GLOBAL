@@ -3,7 +3,7 @@
 
     <div class="blog-grid">
         @foreach ($posts as $post)
-            <div class="blog-card" onclick="location.href='{{ route('blog-detail', $post->slug) }}';">
+            <div class="blog-card" onclick="location.href='{{ route('blog.show', $post->slug) }}';">
                 <img class="blog-img" src="{{ asset('storage/' . $post->image) }}" loading="lazy" alt="{{ $post->title }}">
                 <div class="overlay"></div>
                 <div class="content">

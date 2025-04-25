@@ -27,6 +27,7 @@ class PostResource extends Resource
                     ->required()
                     ->maxLength(2048),
                 Forms\Components\TextInput::make('slug')
+                     ->helperText('')
                     ->required()
                     ->maxLength(2048),
                 Forms\Components\FileUpload::make('image')
