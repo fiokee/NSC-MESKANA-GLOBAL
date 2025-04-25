@@ -57,7 +57,9 @@
                     <small class="pt-1">(99 Reviews)</small>
                 </div>
                 <!-- <h3 class="font-weight-semi-bold mb-4">$150.00</h3> -->
-                <p class="mb-4">{{strip_tags($product->body)}}</p>
+                <p class="mb-4">
+                    {!! str($product->body)->sanitizeHtml() !!}
+                </p>
                 
                 
                 <div class="d-flex align-items-center mb-4 pt-2">
