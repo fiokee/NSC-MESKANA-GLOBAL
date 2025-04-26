@@ -15,8 +15,9 @@
         @endforeach
     </div>
 
-    <!-- Pagination -->
-    <nav class="pagination">
-        {{ $posts->links() }}
-    </nav>
+   <!-- Pagination -->
+<nav class="pagination">
+    {{ $posts->links('vendor.pagination.custom') }}
+</nav>
+
 </x-app-layout>

@@ -9,7 +9,10 @@ class BlogController extends Controller
 {
     public function index()
 {
-    $posts = Post::latest()->paginate(8); // Adjust pagination as needed
+    $posts = Post::latest()->where('active', 1)
+    ->paginate(6); // Adjust pagination as needed
+    // ->orderBy('published_at', 'desc');
+    
     return view('components.blog', compact('posts'));
 }
 

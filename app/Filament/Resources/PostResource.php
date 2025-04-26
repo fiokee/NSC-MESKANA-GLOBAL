@@ -33,6 +33,7 @@ class PostResource extends Resource
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->directory('blog-thumbnails')
+                    ->preserveFilenames() // Try preserving original filenames
                     ->disk('public')
                     ->visibility('public')
                     ->imagePreviewHeight('150')
