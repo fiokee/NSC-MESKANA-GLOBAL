@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout name="Blog">
     <h2>Blog Posts</h2>
 
     <div class="blog-grid">
