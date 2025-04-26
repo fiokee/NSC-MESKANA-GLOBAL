@@ -70,7 +70,7 @@
                                     {{-- <p>Image in production if does not display us this code below</p> --}}
                                     {{-- {{env('APP_ENV') == "production" ? url('add the same floder name you use inside index.php here/storage/app/public/'.$productimage) : asset('storage/'.$productimage)}} --}}
 
-
+                                    {{-- <img class="img-fluid w-100" src="{{url('meskana-ecomms/storage/app/public/'.$product->thumbnail[0])}}" loading="lazy" alt="{{ $product->title }}"> --}}
                                     {{-- meskana-ecomms/storage/app/public/'.$productimage) : asset('storage/'.$productimage)}} --}}
 
                                     @endif

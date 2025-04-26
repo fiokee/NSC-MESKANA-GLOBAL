@@ -14,6 +14,9 @@
 
                         @if($thumbnail)
                             <img class="img-fluid w-100" src="{{ asset('storage/' . $thumbnail) }}" alt="{{ $product->title }}">
+                            
+                            {{-- production image
+                            <img class="img-fluid w-100" src="{{url('meskana-ecomms/storage/app/public/'.$thumbnail)}}" loading="lazy" alt="{{ $product->title }}"> --}}
                         @else
                             <img class="img-fluid w-100" src="{{ asset('storage/default.jpg') }}" alt="Default Image">
                         @endif
