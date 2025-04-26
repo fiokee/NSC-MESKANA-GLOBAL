@@ -13,7 +13,8 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('img/meskana_logo.jpeg') }}">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="LHFK-NjY8U3tlvOZIPttMHo2HrkRkDQVldO6YYaMEyQ"/>  
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
