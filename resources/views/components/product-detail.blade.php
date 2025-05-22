@@ -1,4 +1,4 @@
-<x-app-layout :meta-title="$product->meta_title ?: $product->title">
+<x-app-layout :meta-title="$product->meta_title ?: $product->title" :meta-description="$product->meta_description">
 <!-- Breadcrumb Start -->
 <div class="container-fluid">
     <div class="row px-xl-5">
@@ -45,7 +45,7 @@
 
         <div class="col-lg-7 h-auto mb-30">
             <div class="h-100 bg-light p-30">
-                <h3>{{$product->title}}</h3>
+                <h1>{{$product->title}}</h1>
                 <div class="d-flex mb-3">
                     <div class="text-primary mr-2">
                         <small class="fas fa-star"></small>

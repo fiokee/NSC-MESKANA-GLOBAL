@@ -19,7 +19,7 @@
                                 <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Upgrade your home with stunning, high-quality furniture that blends style and comfort effortlessly. Whether you love modern elegance or classic charm, we have the perfect pieces for you. Order now on</p>
                                 
                                 <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
-                            </div>
+                             </div>
                         </div>
                     </div>
                     <div class="carousel-item position-relative" style="height: 430px;">

@@ -6,8 +6,7 @@
     <title>{{ $metaTitle ?: 'NSC MESKANA GLOBAL CO LTD'}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="meskana store" name="keywords">
-    <meta content="meskana store" name="description">
-    <meta name="description" content="{{$metaDescription}}"
+    <meta name="description" content="{{$metaDescription}}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('img/meskana_logo.jpeg') }}">

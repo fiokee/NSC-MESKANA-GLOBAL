@@ -1,5 +1,7 @@
 <!-- In your components/shop.blade.php file -->
-<x-app-layout :meta-title="$category->title ?? 'Search Results'">
+<x-app-layout :meta-title="$category->title ?? 'Search Results'"
+    :meta-description="$category->meta_description ?? 'Browse our products in this category.'"
+    >
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -82,7 +84,7 @@
                                 </div>
                                 
                                 <div class="text-center py-4">
-                                    <h2 class="h6 text-decoration-none text-truncate" href="#">{{ $product->title }}</h2>
+                                    <h1 class="h6 text-decoration-none text-truncate" href="#">{{ $product->title }}</h1>
                                     <div class="d-flex align-items-center mt-2">
                                         <p class="text-muted ml-2">
                                             {{$product->shortBody()}}
