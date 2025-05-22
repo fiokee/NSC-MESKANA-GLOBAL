@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout metaTitle="contact-us" metaDescription="contact for more info">
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">

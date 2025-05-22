@@ -1,4 +1,4 @@
-<x-app-layout name="Blog">
+<x-app-layout name="Blog" metaTitle="blog" metaDescription="NSC MESKANA GLOBAL blog">
     <h2>Blog Posts</h2>
 
     <div class="blog-grid">
